@@ -11,6 +11,7 @@ variable "description" {
 variable "scope" {
   type = string
   description = "Specifies whether this is for an AWS CloudFront distribution or for a regional application. Valid values are CLOUDFRONT or REGIONAL. To work with CloudFront, you must also specify the Region US East (N. Virginia)"
+  default = "CLOUDFRONT"
 }
 
 variable "ip_address_version" {
@@ -24,6 +25,7 @@ variable "addresses" {
 }
 
 variable "tags" {
-  type = list(map(string))
-  description = "An array of key:value pairs to associate with the resource."
+  type = map(string)
+  description = "A map of tags (key-value pairs) passed to resources."
+  default = null
 }

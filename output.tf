@@ -1,6 +1,6 @@
-output "ip_set_id" {
+output "id" {
   value = aws_wafv2_ip_set.wafv2_ip_set.id
 }
-output "ip_set_arn" {
+output "arn" {
   value = aws_wafv2_ip_set.wafv2_ip_set.arn
 }
