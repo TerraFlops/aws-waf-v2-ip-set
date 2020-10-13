@@ -17,6 +17,7 @@ variable "scope" {
 variable "ip_address_version" {
   type = string
   description = "Specify IPV4 or IPV6. Valid values are IPV4 or IPV6"
+  default = "IPV4"
 }
 
 variable "addresses" {
